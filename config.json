@@ -1,0 +1,48 @@
+{
+    "GlobalPolicies": {
+        "FullBackupWarningHours": 20,
+        "FullBackupCriticalHours": 24,
+        "DiffBackupWarningHours": 10,
+        "DiffBackupCriticalHours": 12,
+        "LogBackupWarningMinutes": 20,
+        "LogBackupCriticalMinutes": 30,
+        "AlertOnMissingBackups": true,
+        "IgnoreSimpleRecoveryLogs": true,
+        "AutoRefreshIntervalSec": 60,
+        "ExcludeWeekends": false,
+        "MaintenanceWindowStart": "",
+        "MaintenanceWindowEnd": ""
+    },
+    "RepositorySettings": {
+        "IsEnabled": false,
+        "ServerAddress": "localhost",
+        "Port": 1433,
+        "DatabaseName": "SQLBackupMonitorDB",
+        "AuthType": "Windows",
+        "Username": "",
+        "Password": "",
+        "Encryption": "Optional",
+        "TrustServerCertificate": true,
+        "RetentionDays": 90,
+        "AutoCreateSchema": true
+    },
+    "EmailSettings": {
+        "IsEnabled": false,
+        "SmtpServer": "smtp.office365.com",
+        "SmtpPort": 587,
+        "EnableSsl": true,
+        "SenderEmail": "dba-alerts@yourcompany.com",
+        "SenderDisplayName": "SQLBackupMonitor Alerts",
+        "SmtpUsername": "",
+        "SmtpPassword": "",
+        "RecipientEmails": "dba-team@yourcompany.com",
+        "AlertOnCritical": true,
+        "AlertOnWarning": false,
+        "AttachPdfReport": true,
+        "DailyReportEnabled": false,
+        "DailyReportTime": "08:00",
+        "LastDailyReportDate": "",
+        "CooldownMinutes": 60
+    },
+    "Servers": []
+}

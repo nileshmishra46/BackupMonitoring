@@ -1,0 +1,19 @@
+# Compiled & Build Artifacts
+bin/
+obj/
+dist/
+*.pfx
+*.cer
+
+# Output reports
+*.pdf
+*.html
+!BackupReport.template.html
+
+# IDE & OS
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+Thumbs.db
